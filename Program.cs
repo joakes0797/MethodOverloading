@@ -25,7 +25,6 @@ namespace MethodOverloading
             }
             else
             {
-                //return "It's not clear what to return when false.";
                 return addition.ToString();
             }
             
@@ -44,6 +43,8 @@ namespace MethodOverloading
             // If the boolean parameter is equal to true, the Add method will return the sum of the 2 numbers plus the word “dollars” at the end of the string.
             // You must also account for the appropriate grammar of the string - so it can’t be “1 dollars”
             // For example: “5 dollars”, "1 dollar”, “16 dollars”.
+            // If false, return only the sum.
+
 
             Console.WriteLine($"Result from Add Method with 3 parameters: {Add(3, 2,true)}");
             Console.WriteLine($"Result from Add Method with 3 parameters: {Add(0, 1, true)}");
